@@ -1,0 +1,44 @@
+{% extends "blog/base.html" %}
+{% load static %}
+{% block content %}
+<div class="centerstage">
+  {% for post in post_list %}
+    <div class="post">
+      <br>
+      <h1><a href="{% url 'post_detail' pk=post.pk %}">{{ post.title }}</a></h1>
+      <br>
+      <div class="date">
+        <p>Published on :{{post.published_date|date:"D M Y"}}</p>
+      </div>
+      <a href="{% url 'post_detail' pk=post.pk %}">Comments: {{post.approve_comments.count}}</a>
+      <br>
+      <br>
+
+    </div>
+    {% endfor %}
+
+</div>
+
+<div class="footer">
+
+<hr>
+<h6>Created by Pratik </h6>
+<h6>All Right Reserved</h6>
+<h6>No CopyRights Intended</h6>
+</div>
+
+<style>
+.post{
+  /* background-image: url({%static 'image/pexels.jpeg' %});
+  background-repeat:no-repeat; */
+  background-color: #99FFE9;
+  box-shadow:5px 15px lightblue;
+  color:black;
+  font-weight:bolder;
+  font-size:15px;
+  font-style:bold;
+}
+
+ </style>
+
+{% endblock%}

@@ -1,0 +1,65 @@
+
+
+.techfont{
+  font-family: 'Roboto Condensed', sans-serif;
+  font-size:1.5em;
+  margin-bottom: 10px;
+
+
+}
+.bigbrand{
+  font-family: 'Roboto Condensed', sans-serif;
+  font-weight: bolder;
+  font-size:1.5em;
+}
+
+.area{
+  width: 300px;
+  height: 300px;
+
+}
+
+
+
+
+.centerstage{
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+
+}
+.post{
+  border: solid black 3px;
+  border-radius: 20px;
+  margin:20px;
+  padding:15px;
+
+
+}
+
+.postdate{
+  font-family: 'Roboto Condensed', sans-serif;
+  font-size: 1.5em;
+  text-align:center;
+
+}
+
+/* .jumbotron {
+  min-width: 585px;
+  margin: 10px auto;
+  display: flex;
+  justify-content: center;
+  margin: 10px 10px 10px 10px;
+  border: 0.08em solid black;
+} */
+.postcontent{
+  font-family:'Montserrat';
+  font-size:1.5em;
+
+
+}
+
+.post-comment{
+  position:absolute;
+  right: 0px;
+}
